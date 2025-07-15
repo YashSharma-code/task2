@@ -37,7 +37,9 @@ Enable the **TurtleBot3** robot to autonomously **explore and map an unknown env
 ## 📦 Directory Structure
 
 your_ws/
+
 ├── src/
+
 │ ├── simple_explorer/ 
 
 ---
@@ -114,8 +116,8 @@ In terminal 4:
 In terminal 5:
 
 ```bash
-source ~/turtlebot3_ws/install/setup.bash
-ros2 run simple_explorer explorer
+source ~/your_ws/install/setup.bash
+ros2 run simple_explorer explorer_node
 ```
 This will start your custom frontier exploration node that sends goal positions to the Nav2 stack based on detected unexplored regions in the SLAM map.
 
